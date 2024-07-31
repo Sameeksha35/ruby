@@ -1,0 +1,1 @@
+puts [1, 2, 3].pack("C*").unpack("C*").inspect
