@@ -102,6 +102,41 @@ h  # => {b: 2}
 
 
 # Returns an array of key-value pairs sorted by key.
+h = {b: 2, a: 1}
+h.sort  # => [[:a, 1], [:b, 2]]
+
+# Stores a key-value pair.
+h = {}
+h.store(:a, 1)
+h  # => {a: 1}
+
+# Converts the hash to an array of key-value pairs.
+h = {a: 1, b: 2}
+h.to_a  # => [[:a, 1], [:b, 2]]
+
+# Converts the hash to a string.
+h = {a: 1, b: 2}
+h.to_s  # => "{:a=>1, :b=>2}"
+
+# Updates hash with contents of other_hash, overwriting duplicates.
+h1 = {a: 1}
+h2 = {b: 2}
+h1.update(h2)
+h1  # => {a: 1, b: 2}
+
+# Checks if value is in the hash.
+h = {a: 1}
+h.value?(1)  # => true
+
+# Returns an array of the hash's values.
+h = {a: 1, b: 2}
+h.values  # => [1, 2]
+
+# Returns an array of values for the given keys.
+h = {a: 1, b: 2}
+h.values_at(:a, :b)  # => [1, 2]
+
+
 
 
 
