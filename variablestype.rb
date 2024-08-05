@@ -1,0 +1,5 @@
+puts "Local Variables: Temporary storage in a specific scope."
+puts "Instance Variables: Hold data specific to an instance of a class."
+puts "Class Variables: Shared among all instances of a class."
+puts "Global Variables: Accessible throughout the entire program."
+puts "Constants: Immutable values meant to remain the same."
